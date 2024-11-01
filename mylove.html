@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UFT-8">
+<meta name="viewport"content="width=device-width,initial-scale=1.0">
+<title>animated massage</title>
+<style>
+body{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+margin:0;
+background-color:#1a1a2e;
+font-family:arial,sans-serif;
+}
+.message{
+font-size:6em;
+font-weight:bold;
+color:#fff;
+text-shadow: 0 0 10px
+#f39c12, 0 0 20px #e74c3c, 0 0 30px #3498db, 0 0 40px #8e44ad;
+animation:glow 2s
+ease-in-out infinite, colorchange 5s
+linear infinite;
+}
+@keyframes glow{
+0%, 100%{text-shadow:0 0 10px #f39c12, 0 0 20px #e74c3c, 0 0 30px #3498db, 0 0 40px #8e44ad;}
+50%{text-shadow: 0 0 20px #f1c40f, 0 0 30px #9b59b6, 0 0 40px #1abc9c, 0 0 50px #e74c3c;}
+}
+@keyframes colorchange{
+0%{color:#f39c12;}
+25%{color:#e74c3c;}
+50%{color:#3498db;}
+75%{color:#8e44ad;}
+100%{color:#f39c12;}
+}
+</style>
+</head>
+<body>
+<div class="message"> i love you sunita goiram from thomas</div>
+</body>
+</html>
